@@ -21,9 +21,22 @@
     <button class="btn btn-primary" onclick="startSimulation()">🚀 Lancer simulation</button>
   </div>
 
-  <div class="card p-3">
+  <div class="card p-3 mb-4">
     <h5>📜 Journal :</h5>
     <ul id="log" class="list-group"></ul>
+  </div>
+
+  <div class="card p-3">
+    <h5>🧩 Animation graphique</h5>
+    <div class="d-flex justify-content-between align-items-center" style="height: 80px; position: relative;">
+      <div id="taskA" class="p-2 bg-primary text-white rounded">Tâche A</div>
+      <div style="flex-grow: 1; position: relative;">
+        <div id="bubble" style="width: 80px; height: 40px; background: #ffc107; color: black;
+             position: absolute; top: 0; left: 0; text-align: center; line-height: 40px;
+             border-radius: 10px; display: none;">msg</div>
+      </div>
+      <div id="taskB" class="p-2 bg-success text-white rounded">Tâche B</div>
+    </div>
   </div>
 </div>
 
